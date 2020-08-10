@@ -1,0 +1,149 @@
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+  color: grey
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+
+ul
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+.container
+  max-width: 920px
+  margin: 0 auto
+
+.header
+  background: deepskyblue
+  position: sticky
+  top: 0
+  height: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+  &__logo
+    color: #fff
+    font-weight: bold
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2))
+
+.top-menu
+  &__search
+    border: 0
+    border-radius: 26px
+    outline: 0
+    padding: 5px
+
+.left-menu
+  width: 20%
+
+  &__item
+    padding: 3px
+    padding-left: 10px
+    margin: 10px 0
+    position: relative
+    display: flex
+    align-items: center
+    cursor: pointer
+
+    &:hover:before
+      content: ''
+      display: inline-block
+      position: absolute
+      left: 0
+      width: 5px
+      height: 100%
+      background: skyblue
+
+.main
+  display: flex
+
+.profile
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+
+  &__header
+    height: 200px
+    background: lightskyblue
+    position: relative
+
+  &__photo
+    height: 100px
+    width: 100px
+    border-radius: 50%
+    overflow: hidden
+    background: lightskyblue
+    position: absolute
+    bottom: -50px
+    left: 25px
+
+    img
+      widht: 100%
+      max-width: 100px
+
+  &__name
+    color: deepskyblue
+    line-height: 50px
+    margin-left: 150px
+    border-bottom: 1px solid lightskyblue
+
+  &__about
+    margin-top: 15px
+    
+
+.about
+  position: relative
+  margin-left: 150px
+
+  &__value
+      display: inline-block
+      position: absolute
+      left: 150px
+
+.posts
+  margin-top: 15px
+
+  &__title
+    color: deepskyblue
+
+.new-post
+  display: flex
+  flex-direction: column
+
+  &__text-area
+    width: 100%
+    border: 0
+    outline: 0
+    background: #eee
+    margin-top: 5px
+    padding: 15px
+    box-sizing: border-box
+
+  &__send
+    border: 0
+    outline: 0
+    cursor: pointer
+    margin-top: 5px
+    padding: 5px 20px
+    border-radius: 3px
+    background: deepskyblue
+    color: white
+    align-self: flex-end
+
+.post
+  &
