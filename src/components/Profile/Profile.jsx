@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Profile.module.sass'
-import Posts from '../Posts/Posts'
+import Posts from './Posts/Posts'
 
 const Profile = () => {
     return (
