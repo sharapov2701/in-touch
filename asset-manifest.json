@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/in-touch/static/css/main.a003c1d1.chunk.css",
-    "main.js": "/in-touch/static/js/main.beecfaab.chunk.js",
-    "main.js.map": "/in-touch/static/js/main.beecfaab.chunk.js.map",
+    "main.js": "/in-touch/static/js/main.40c789de.chunk.js",
+    "main.js.map": "/in-touch/static/js/main.40c789de.chunk.js.map",
     "runtime-main.js": "/in-touch/static/js/runtime-main.9d646652.js",
     "runtime-main.js.map": "/in-touch/static/js/runtime-main.9d646652.js.map",
     "static/js/2.62689780.chunk.js": "/in-touch/static/js/2.62689780.chunk.js",
     "static/js/2.62689780.chunk.js.map": "/in-touch/static/js/2.62689780.chunk.js.map",
     "index.html": "/in-touch/index.html",
-    "precache-manifest.a8fba7b5eff3907f61138a8fdac95e31.js": "/in-touch/precache-manifest.a8fba7b5eff3907f61138a8fdac95e31.js",
+    "precache-manifest.3fb9b3cbe0db8f06c5870656550ebf68.js": "/in-touch/precache-manifest.3fb9b3cbe0db8f06c5870656550ebf68.js",
     "service-worker.js": "/in-touch/service-worker.js",
     "static/css/main.a003c1d1.chunk.css.map": "/in-touch/static/css/main.a003c1d1.chunk.css.map",
     "static/js/2.62689780.chunk.js.LICENSE.txt": "/in-touch/static/js/2.62689780.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9d646652.js",
     "static/js/2.62689780.chunk.js",
     "static/css/main.a003c1d1.chunk.css",
-    "static/js/main.beecfaab.chunk.js"
+    "static/js/main.40c789de.chunk.js"
   ]
 }
