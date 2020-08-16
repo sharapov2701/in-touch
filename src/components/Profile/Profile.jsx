@@ -4,12 +4,12 @@ import ProfileInfo from './ProfileInfo/ProfileInfo'
 import Posts from './Posts/Posts'
 import style from './Profile.module.sass'
 
-const Profile = () => {
+const Profile = ({ posts }) => {
     return (
         <div className={style.profile}>
             <ProfileHeader />
             <ProfileInfo />
-            <Posts />
+            <Posts posts={posts} />
         </div>
     )
 }

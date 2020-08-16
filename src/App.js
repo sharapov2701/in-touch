@@ -5,14 +5,18 @@ import Profile from './components/Profile/Profile'
 import Messages from './components/Messages/Messages'
 import { Route } from 'react-router-dom'
 
-function App(props) {
+function App({ posts }) {
     return (
         <div className='wrapper'>
             <div className='content'>
                 <Header />
                 <main className='main container'>
                     <Nav />
-                    <Route path='/' exact component={Profile} />
+                    <Route
+                        path='/'
+                        exact
+                        render={() => <Profile posts={posts} />}
+                    />
                     <Route path='/messages' exact component={Messages} />
                     <Route path='/messages/:id' exact component={Messages} />
                 </main>

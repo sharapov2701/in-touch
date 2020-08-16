@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import style from './Post.module.sass'
 
-const Post = ({ body }) => {
+const Post = props => {
     const ref = useRef(null)
 
     useEffect(() => {
@@ -18,12 +18,15 @@ const Post = ({ body }) => {
     return (
         <div className={style.post}>
             <div className={style.image}>
-                <img
-                    ref={ref}
-                    src='https://gamepedia.cursecdn.com/dota2_gamepedia/0/00/Invoker_icon.png?version=fb7516f0b780535fa8acfa9e8cb99266'
-                />
+                <img ref={ref} src={props.post.img} />
             </div>
-            <div className={style.body}>{body}</div>
+            <div className={style.wrapper}>
+                <div className={style.header}>
+                    <div className={style.name}>{props.post.name}</div>
+                    <div className={style.time}>{props.post.time}</div>
+                </div>
+                <div className={style.body}>{props.post.body}</div>
+            </div>
         </div>
     )
 }

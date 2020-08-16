@@ -16,13 +16,18 @@ const Dialog = props => {
         }
     })
     return (
-        <NavLink to={`/messages/${props.id}/`} className={style.dialog} activeClassName={style.active} exact>
+        <NavLink
+            to={`/messages/${props.dialog.id}/`}
+            className={style.dialog}
+            activeClassName={style.active}
+            exact
+        >
             <div className={style.img}>
-                <img ref={ref} src={props.img} alt={props.name} />
+                <img ref={ref} src={props.dialog.img} alt={props.dialog.name} />
             </div>
             <div className={style.text}>
-                <div className={style.name}>{props.name}</div>
-                <div className={style.body}>{props.body}</div>
+                <div className={style.name}>{props.dialog.name}</div>
+                <div className={style.body}>{props.dialog.body}</div>
             </div>
         </NavLink>
     )

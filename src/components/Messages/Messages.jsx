@@ -3,10 +3,10 @@ import style from './Messages.module.sass'
 import Dialogs from './Dialogs/Dialogs'
 import Chat from './Chat/Chat'
 
-const Messages = props => {
+const Messages = ({ dialogs }) => {
     return (
         <div className={style.messages}>
-            <Dialogs />
+            <Dialogs dialog={dialogs} />
             <Chat />
         </div>
     )

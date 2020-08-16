@@ -3,13 +3,14 @@ import style from './Posts.module.sass'
 import NewPost from './NewPost/NewPost'
 import Post from './Post/Post'
 
-const Posts = () => {
+const Posts = ({ posts }) => {
+    const postsElements = posts.map(post => <Post post={post} />)
+
     return (
         <div className={style.posts}>
             <h3 className={style.title}>Записи</h3>
             <NewPost />
-            <Post body='Ты не сравнишься со мной, ибо я несравненен' />
-            <Post body='Я - маяк мудрости в океане невежества' />
+            {postsElements}
         </div>
     )
 }
