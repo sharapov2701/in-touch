@@ -1,20 +1,11 @@
 import React, { useRef, useEffect } from 'react'
 import style from './ChatHeader.module.css'
 import { NavLink } from 'react-router-dom'
+import {resize} from '../../../../utils'
 
 const ChatHeader = props => {
-    const ref = useRef(null)
-
-    useEffect(() => {
-        const img = ref.current
-        if (img) {
-            if (img.offsetHeight > img.offsetWidth) {
-                img.style.width = '100%'
-            } else {
-                img.style.height = '100%'
-            }
-        }
-    })
+    const img = useRef()
+    useEffect(() => resize(img))
 
     return (
         <div className={style.header}>
@@ -26,7 +17,7 @@ const ChatHeader = props => {
                     {props.name}
                 </div>
                 <div href='#' className={style.img}>
-                    <img ref={ref} src={props.img} />
+                    <img ref={img} src={props.img} />
                 </div>
             </div>
         </div>

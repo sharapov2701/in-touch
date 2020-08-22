@@ -1,26 +1,17 @@
 import React, { useEffect, useRef } from 'react'
+import { resize } from '../../../../utils'
 import style from './Message.module.css'
 
 const Message = props => {
-    const ref = useRef(null)
-
-    useEffect(() => {
-        const img = ref.current
-        if (img) {
-            if (img.offsetHeight > img.offsetWidth) {
-                img.style.width = '100%'
-            } else {
-                img.style.height = '100%'
-            }
-        }
-    })
+    const img = useRef()
+    useEffect(() => resize(img))
 
     return (
         <div className={style.message}>
             <div className={style.img}>
                 <a href='#'>
                     <img
-                        ref={ref}
+                        ref={img}
                         src={props.message.img}
                         alt={props.message.name}
                     />

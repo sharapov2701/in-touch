@@ -16,20 +16,31 @@ function App({ state }) {
                     <Route
                         path='/'
                         exact
-                        render={() => <Profile posts={profilePage.posts} />}
+                        render={() => (
+                            <Profile
+                                posts={profilePage.posts}
+                                friends={profilePage.friends}
+                            />
+                        )}
                     />
                     <Route
                         path='/messages'
                         exact
                         render={() => (
-                            <Messages messages={messagesPage.messages} dialogs={messagesPage.dialogs} />
+                            <Messages
+                                messages={messagesPage.messages}
+                                dialogs={messagesPage.dialogs}
+                            />
                         )}
                     />
                     <Route
                         path='/messages/:id'
                         exact
                         render={() => (
-                            <Messages messages={messagesPage.messages} dialogs={messagesPage.dialogs} />
+                            <Messages
+                                messages={messagesPage.messages}
+                                dialogs={messagesPage.dialogs}
+                            />
                         )}
                     />
                 </main>

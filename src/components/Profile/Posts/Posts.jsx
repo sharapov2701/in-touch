@@ -4,7 +4,7 @@ import NewPost from './NewPost/NewPost'
 import Post from './Post/Post'
 
 const Posts = ({ posts }) => {
-    const postsElements = posts.map(post => <Post post={post} />)
+    const postsElements = posts.map(post => <Post post={post} key={post.id} />)
 
     return (
         <div className={style.posts}>

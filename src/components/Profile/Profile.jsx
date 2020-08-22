@@ -5,12 +5,12 @@ import Posts from './Posts/Posts'
 import ProfileFriends from './ProfileFriends/ProfileFriends'
 import style from './Profile.module.css'
 
-const Profile = ({ posts }) => {
+const Profile = ({ posts, friends }) => {
     return (
         <div className={style.profile}>
             <ProfileHeader />
             <ProfileInfo />
-            <ProfileFriends />
+            <ProfileFriends friends={friends} />
             <Posts posts={posts} />
         </div>
     )
