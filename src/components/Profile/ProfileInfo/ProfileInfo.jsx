@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './ProfileInfo.module.sass'
+import style from './ProfileInfo.module.css'
 
 const ProfileInfo = () => {
     return (

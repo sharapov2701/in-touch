@@ -1,0 +1,43 @@
+.dialog {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    max-width: 100%;
+}
+
+.dialog:hover,
+.dialog:active,
+.active {
+    background: #f7f8fa;
+    cursor: pointer;
+    border-top: 1px solid #e6e7eb;
+    border-bottom: 1px solid #e6e7eb;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text {
+    overflow: hidden;
+}
+
+.name {
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+.body {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

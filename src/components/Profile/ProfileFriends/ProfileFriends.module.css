@@ -1,0 +1,23 @@
+.title {
+    color: deepskyblue;
+}
+
+.friends {
+    display: flex;
+    margin: 15px 0;
+    background: white;
+    border: 1px solid #e6e7eb;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.image {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}

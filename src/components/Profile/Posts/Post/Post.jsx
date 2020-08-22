@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import style from './Post.module.sass'
+import style from './Post.module.css'
 
 const Post = props => {
     const ref = useRef(null)

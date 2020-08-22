@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
-import style from './Dialog.module.sass'
+import style from './Dialog.module.css'
 import { NavLink, withRouter } from 'react-router-dom'
 
 const Dialog = props => {
-    const ref = useRef(null)
+    const ref = useRef()
 
     useEffect(() => {
         const img = ref.current

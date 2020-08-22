@@ -1,10 +1,12 @@
 import React from 'react'
-import style from './Dialogs.module.sass'
+import style from './Dialogs.module.css'
 import Dialog from './Dialog/Dialog'
 import { withRouter } from 'react-router-dom'
 
-const Dialogs = ({ dialogs }) => {
-    const dialogsElements = dialogs.map(dialog => <Dialog dialog={dialog} />)
+const Dialogs = props => {
+    const dialogsElements = props.dialogs.map(dialog => (
+        <Dialog dialog={dialog} />
+    ))
 
     return (
         <div

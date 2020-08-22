@@ -1,13 +1,13 @@
 import React from 'react'
-import style from './Messages.module.sass'
+import style from './Messages.module.css'
 import Dialogs from './Dialogs/Dialogs'
 import Chat from './Chat/Chat'
 
-const Messages = ({ dialogs }) => {
+const Messages = ({ dialogs, messages }) => {
     return (
         <div className={style.messages}>
-            <Dialogs dialog={dialogs} />
-            <Chat />
+            <Dialogs dialogs={dialogs} />
+            <Chat messages={messages} />
         </div>
     )
 }

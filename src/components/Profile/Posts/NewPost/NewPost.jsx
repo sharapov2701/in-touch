@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './NewPost.module.sass'
+import style from './NewPost.module.css'
 
 const NewPost = () => {
     return (

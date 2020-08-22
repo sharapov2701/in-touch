@@ -1,0 +1,15 @@
+.chat {
+    width: 65%;
+}
+
+@media (max-width: 425px) {
+    .chat {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .hide {
+        display: none;
+    }
+}

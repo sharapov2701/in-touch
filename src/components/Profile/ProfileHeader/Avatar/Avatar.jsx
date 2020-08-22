@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import style from './Avatar.module.sass'
+import style from './Avatar.module.css'
 
 const Avatar = () => {
     const ref = useRef(null)

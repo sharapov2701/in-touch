@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import style from './Message.module.sass'
+import style from './Message.module.css'
 
 const Message = props => {
     const ref = useRef(null)

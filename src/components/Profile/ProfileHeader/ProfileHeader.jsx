@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './ProfileHeader.module.sass'
+import style from './ProfileHeader.module.css'
 import Avatar from './Avatar/Avatar'
 
 const ProfileHeader = () => {

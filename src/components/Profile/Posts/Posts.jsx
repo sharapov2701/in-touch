@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Posts.module.sass'
+import style from './Posts.module.css'
 import NewPost from './NewPost/NewPost'
 import Post from './Post/Post'
 

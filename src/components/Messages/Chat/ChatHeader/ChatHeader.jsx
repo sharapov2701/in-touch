@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import style from './ChatHeader.module.sass'
+import style from './ChatHeader.module.css'
 import { NavLink } from 'react-router-dom'
 
 const ChatHeader = props => {

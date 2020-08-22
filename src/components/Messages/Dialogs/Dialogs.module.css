@@ -1,0 +1,16 @@
+.dialogs {
+    width: 35%;
+    border-right: 1px solid #e6e7eb;
+}
+
+@media (max-width: 425px) {
+    .dialogs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .hide {
+        display: none;
+    }
+}

@@ -1,33 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.sass'
+import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { BrowserRouter } from 'react-router-dom'
-
-const posts = [
-    {
-        id: 1,
-        body: 'Ты не сравнишься со мной, ибо я несравненен',
-        img:
-            'https://gamepedia.cursecdn.com/dota2_gamepedia/0/00/Invoker_icon.png?version=fb7516f0b780535fa8acfa9e8cb99266',
-        name: 'Карл И.',
-        time: '4:20'
-    },
-    {
-        id: 2,
-        body: 'Я - маяк мудрости в океане невежества',
-        img:
-            'https://gamepedia.cursecdn.com/dota2_gamepedia/0/00/Invoker_icon.png?version=fb7516f0b780535fa8acfa9e8cb99266',
-        name: 'Карл И.',
-        time: '4:19'
-    }
-]
+import state from './redux/state'
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter basename='/in-touch/'>
-            <App posts={posts} />
+            <App state={state} />
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')

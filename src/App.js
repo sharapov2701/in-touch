@@ -5,7 +5,8 @@ import Profile from './components/Profile/Profile'
 import Messages from './components/Messages/Messages'
 import { Route } from 'react-router-dom'
 
-function App({ posts }) {
+function App({ state }) {
+    const { profilePage, messagesPage } = state
     return (
         <div className='wrapper'>
             <div className='content'>
@@ -15,10 +16,22 @@ function App({ posts }) {
                     <Route
                         path='/'
                         exact
-                        render={() => <Profile posts={posts} />}
+                        render={() => <Profile posts={profilePage.posts} />}
                     />
-                    <Route path='/messages' exact component={Messages} />
-                    <Route path='/messages/:id' exact component={Messages} />
+                    <Route
+                        path='/messages'
+                        exact
+                        render={() => (
+                            <Messages messages={messagesPage.messages} dialogs={messagesPage.dialogs} />
+                        )}
+                    />
+                    <Route
+                        path='/messages/:id'
+                        exact
+                        render={() => (
+                            <Messages messages={messagesPage.messages} dialogs={messagesPage.dialogs} />
+                        )}
+                    />
                 </main>
             </div>
         </div>
