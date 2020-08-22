@@ -1,5 +1,11 @@
 .chat {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex: 1;
 }
 
 @media (max-width: 425px) {
