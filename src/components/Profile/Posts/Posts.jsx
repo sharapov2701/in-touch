@@ -3,15 +3,15 @@ import style from './Posts.module.css'
 import NewPost from './NewPost/NewPost'
 import Post from './Post/Post'
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts, addPost }) => {
     const postsElements = posts.map(post => <Post post={post} key={post.id} />)
 
     return (
-        <div className={style.posts}>
+        <React.Fragment>
             <h3 className={style.title}>Записи</h3>
-            <NewPost />
-            {postsElements}
-        </div>
+            <NewPost addPost={addPost} />
+            <div className={style.posts}>{postsElements}</div>
+        </React.Fragment>
     )
 }
 

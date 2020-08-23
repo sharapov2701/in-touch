@@ -1,7 +1,9 @@
 .posts {
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .title {
     color: deepskyblue;
+    margin-top: 15px;
 }

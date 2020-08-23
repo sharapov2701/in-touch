@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from '../render'
+
 const state = {
     profilePage: {
         posts: [
@@ -95,6 +97,19 @@ const state = {
             }
         ]
     }
+}
+
+export const addPost = postMessage => {
+    const newPost = {
+        id: Math.ceil(Math.random() * 10000),
+        body: postMessage,
+        img:
+            'https://gamepedia.cursecdn.com/dota2_gamepedia/0/00/Invoker_icon.png?version=fb7516f0b780535fa8acfa9e8cb99266',
+        name: 'Карл И.',
+        time: '4:19'
+    }
+    state.profilePage.posts.push(newPost)
+    rerenderEntireTree(state)
 }
 
 export default state

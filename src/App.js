@@ -5,7 +5,7 @@ import Profile from './components/Profile/Profile'
 import Messages from './components/Messages/Messages'
 import { Route } from 'react-router-dom'
 
-function App({ state }) {
+function App({ state, addPost }) {
     const { profilePage, messagesPage } = state
     return (
         <div className='wrapper'>
@@ -20,6 +20,7 @@ function App({ state }) {
                             <Profile
                                 posts={profilePage.posts}
                                 friends={profilePage.friends}
+                                addPost={addPost}
                             />
                         )}
                     />
