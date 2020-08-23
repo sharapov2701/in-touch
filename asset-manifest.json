@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/in-touch/static/css/main.cfe9372b.chunk.css",
-    "main.js": "/in-touch/static/js/main.5bed46ba.chunk.js",
-    "main.js.map": "/in-touch/static/js/main.5bed46ba.chunk.js.map",
+    "main.css": "/in-touch/static/css/main.68dd8acf.chunk.css",
+    "main.js": "/in-touch/static/js/main.110709f3.chunk.js",
+    "main.js.map": "/in-touch/static/js/main.110709f3.chunk.js.map",
     "runtime-main.js": "/in-touch/static/js/runtime-main.9d646652.js",
     "runtime-main.js.map": "/in-touch/static/js/runtime-main.9d646652.js.map",
     "static/js/2.08104713.chunk.js": "/in-touch/static/js/2.08104713.chunk.js",
     "static/js/2.08104713.chunk.js.map": "/in-touch/static/js/2.08104713.chunk.js.map",
     "index.html": "/in-touch/index.html",
-    "precache-manifest.df1c48cb7aca7ed9008618140be8478d.js": "/in-touch/precache-manifest.df1c48cb7aca7ed9008618140be8478d.js",
+    "precache-manifest.65db0bb5324c49ed2755f81a9e75d6af.js": "/in-touch/precache-manifest.65db0bb5324c49ed2755f81a9e75d6af.js",
     "service-worker.js": "/in-touch/service-worker.js",
-    "static/css/main.cfe9372b.chunk.css.map": "/in-touch/static/css/main.cfe9372b.chunk.css.map",
+    "static/css/main.68dd8acf.chunk.css.map": "/in-touch/static/css/main.68dd8acf.chunk.css.map",
     "static/js/2.08104713.chunk.js.LICENSE.txt": "/in-touch/static/js/2.08104713.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9d646652.js",
     "static/js/2.08104713.chunk.js",
-    "static/css/main.cfe9372b.chunk.css",
-    "static/js/main.5bed46ba.chunk.js"
+    "static/css/main.68dd8acf.chunk.css",
+    "static/js/main.110709f3.chunk.js"
   ]
 }
