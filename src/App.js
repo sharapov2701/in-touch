@@ -5,8 +5,9 @@ import Profile from './components/Profile/Profile'
 import Messages from './components/Messages/Messages'
 import { Route } from 'react-router-dom'
 
-function App({ state, addPost }) {
+function App({ state, addPost, changeNewPostText }) {
     const { profilePage, messagesPage } = state
+
     return (
         <div className='wrapper'>
             <div className='content'>
@@ -18,9 +19,9 @@ function App({ state, addPost }) {
                         exact
                         render={() => (
                             <Profile
-                                posts={profilePage.posts}
-                                friends={profilePage.friends}
+                                profilePage={profilePage}
                                 addPost={addPost}
+                                changeNewPostText={changeNewPostText}
                             />
                         )}
                     />

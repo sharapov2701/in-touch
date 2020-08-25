@@ -2,12 +2,8 @@ import React from 'react'
 import style from './NewPost.module.css'
 import { useRef } from 'react'
 
-const NewPost = ({ addPost }) => {
+const NewPost = ({ addPost, newPostText, changeNewPostText }) => {
     const post = useRef()
-    const add = () => {
-        addPost(post.current.value)
-        post.current.value = ''
-    }
 
     return (
         <div className={style.post}>
@@ -16,8 +12,10 @@ const NewPost = ({ addPost }) => {
                 type='text-area'
                 placeholder='Что нового?'
                 ref={post}
+                value={newPostText}
+                onChange={event => changeNewPostText(event.target.value)}
             />
-            <button className={style.send} onClick={add}>
+            <button className={style.send} onClick={addPost}>
                 Опубликовать
             </button>
         </div>
