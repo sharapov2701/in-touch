@@ -1,4 +1,5 @@
-import { rerenderEntireTree } from '../render'
+let rerenderEntireTree = () =>
+    console.log('rerenderEntireTree should be implemented')
 
 const state = {
     profilePage: {
@@ -117,6 +118,10 @@ export const addPost = () => {
 export const changeNewPostText = text => {
     state.profilePage.newPostText = text
     rerenderEntireTree(state)
+}
+
+export const subscribe = callback => {
+    rerenderEntireTree = callback
 }
 
 export default state
