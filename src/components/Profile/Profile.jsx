@@ -5,7 +5,7 @@ import Posts from './Posts/Posts'
 import ProfileFriends from './ProfileFriends/ProfileFriends'
 import style from './Profile.module.css'
 
-const Profile = ({ profilePage, addPost, changeNewPostText }) => {
+const Profile = ({ profilePage, dispatch }) => {
     const { posts, friends, newPostText } = profilePage
 
     return (
@@ -15,9 +15,8 @@ const Profile = ({ profilePage, addPost, changeNewPostText }) => {
             <ProfileFriends friends={friends} />
             <Posts
                 posts={posts}
-                addPost={addPost}
                 newPostText={newPostText}
-                changeNewPostText={changeNewPostText}
+                dispatch={dispatch}
             />
         </div>
     )

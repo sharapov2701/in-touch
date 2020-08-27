@@ -5,7 +5,7 @@ import style from './Dialog.module.css'
 
 const Dialog = props => {
     const img = useRef()
-    useEffect(() => resize(img))
+    useEffect(() => resize(img), [])
 
     return (
         <NavLink

@@ -4,7 +4,7 @@ import style from './Post.module.css'
 
 const Post = props => {
     const img = useRef()
-    useEffect(() => resize(img))
+    useEffect(() => resize(img), [])
 
     return (
         <div className={style.post}>

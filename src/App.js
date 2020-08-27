@@ -5,7 +5,7 @@ import Profile from './components/Profile/Profile'
 import Messages from './components/Messages/Messages'
 import { Route } from 'react-router-dom'
 
-function App({ state, addPost, changeNewPostText }) {
+function App({ state, dispatch }) {
     const { profilePage, messagesPage } = state
 
     return (
@@ -20,8 +20,7 @@ function App({ state, addPost, changeNewPostText }) {
                         render={() => (
                             <Profile
                                 profilePage={profilePage}
-                                addPost={addPost}
-                                changeNewPostText={changeNewPostText}
+                                dispatch={dispatch}
                             />
                         )}
                     />

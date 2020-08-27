@@ -4,7 +4,7 @@ import style from './ProfileFriend.module.css'
 
 const ProfileFriends = ({friend}) => {
     const img = useRef()
-    useEffect(() => resize(img))
+    useEffect(() => resize(img), [])
 
     return (
         <div className={style.image}>

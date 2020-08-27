@@ -4,7 +4,7 @@ import style from './Message.module.css'
 
 const Message = props => {
     const img = useRef()
-    useEffect(() => resize(img))
+    useEffect(() => resize(img), [])
 
     return (
         <div className={style.message}>
